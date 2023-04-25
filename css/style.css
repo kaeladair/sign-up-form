@@ -1,5 +1,5 @@
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     padding: 0px;
     margin: 0px;
 }
@@ -13,9 +13,10 @@ body {
     background-color: white;
 }
 
+/* Left section of the page */
 .left-section {
     display: flex;
-    width: 40%;
+    width: 30%;
     height: 100%;
     background: url(../assets/background.png) no-repeat center;
     background-size: cover;
@@ -32,4 +33,57 @@ body {
 a {
     color: inherit;
 }
+
+
+/* Right section of the page */
+.right-section {
+    padding: 3%;
+    width: 70%;
+    height: 100%;
+}
+
+
+/* Form */
+.form-section {
+    background: lightgray;
+    margin-top: 50px;
+    padding: 25px;
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.form-header {
+    font-size: 20px;
+    font-weight: bolder;
+    margin-bottom: 25px;
+}
+
+form .container{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+label, input {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+  position: relative;
+  width: 15rem;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+input {
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    font-size: .9rem;
+    margin-top: 3px;
+}
+
 
