@@ -16,12 +16,14 @@ body {
 /* Left section of the page */
 .left-section {
     display: flex;
-    width: 30%;
+    width: 50%;
     height: 100%;
     background: url(../assets/sand2.png) no-repeat center;
     background-size: cover;
     align-content: center;
     justify-content: center;
+    opacity: 1;
+    filter: brightness(50%);
 }
 
 .img {
@@ -37,19 +39,25 @@ a {
 
 /* Right section of the page */
 .right-section {
-    padding: 3%;
-    width: 70%;
+    padding: 6%;
+    width: 50%;
     height: 100%;
+    font-size: 15px;
 }
 
 
 /* Form */
 .form-section {
     background: white;
-    margin-top: 50px;
+    margin-top: 20px;
     padding: 25px;
     border-radius: 6px;
     box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+
+.header h1 {
+    text-align: center;
+    margin-top: 90px;
 }
 
 .form-header {
@@ -61,7 +69,8 @@ a {
 form .container{
     display: flex;
     flex: 1;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 
@@ -73,17 +82,22 @@ label, input {
 label {
   position: relative;
   width: 15rem;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: bold;
 
 }
 
 input {
-    padding: 8px 10px;
+    width: 100%;
+    padding: 10px 15px;
     border-radius: 5px;
     border: .5px solid lightgray;
     font-size: .9rem;
     margin-top: 3px;
+}
+
+.input {
+    padding: 10px;
 }
 
 /* Button styling from Stripe */
@@ -113,7 +127,7 @@ input {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 20%;
+    width: 100%;
 }
 
 .button-9:disabled {
